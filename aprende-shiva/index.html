@@ -8,9 +8,102 @@
     <link rel="stylesheet" href="css/foundation.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
 
-    <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
+     <div class="row">
+        <h1>GRID</h1>
+        <h3 class="subheader">Distribución por 12 celdas con clases como <code>(large|medium|small-x columns)</code></h3>
+        <div class="medium-4 small-12 columns" style="background-color:yellow;">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="medium-4 small-12 columns" style="background-color:pink;">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto veniam, itaque. Beatae nulla aliquid eveniet, sapiente est velit magni quos quaerat, rem nobis dignissimos numquam odit. Ex, veniam quia magni.</p>
+        </div>
+        <div class="medium-4 small-12 columns" style="background-color:yellow;">
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam aliquid repellat fugiat deleniti mollitia autem velit perspiciatis incidunt quisquam quaerat aspernatur, quo est. Tempore eveniet est adipisci omnis expedita earum.</p>
+        </div>
+     </div>
+     <div class="row">
+        <p class="large-offset-4 large-4">este párrafo es de tamaño 4, con 4 desplazados a la izquierda gracias a <code>large|medium|small-offset-x</code></p>
+     </div>
+
+
+     <!------------------------------>
+     <hr>
+     <!------------------------------->
+
+     <div class="row">
+        <h1>TABLES</h1>
+        <h3 class="subheader">Tablas normales con <code>table</code> y diferenciando <code>thead, tbody</code></h3>
+        <table>
+          <thead>
+           <tr>
+             <th>Firstname</th>
+             <th>Lastname</th>
+             <th>Email</th>
+           </tr>
+          </thead>
+          <tbody>
+           <tr>
+             <td>John</td>
+             <td>Doe</td>
+             <td>john@example.com</td>
+           </tr>
+           <tr>
+             <td>Mary</td>
+             <td>Moe</td>
+             <td>mary@example.com</td>
+           </tr>
+           <tr>
+             <td>July</td>
+             <td>Dooley</td>
+             <td>july@example.com</td>
+           </tr>
+          </tbody>
+        </table>
+     </div>
+
+     <!------------------------------>
+     <hr>
+     <!------------------------------->
+
+     <div class="row">
+        <h1>BUTTONS</h1>
+        <h3 class="subheader">Uso de clase <code>button</code> seguido del tipo <code>secondary|success|info|warning|alert</code></h3>
+        <button type="button" class="button">button</button>
+        <button type="button" class="button secondary">button secondary</button>
+        <button type="button" class="button success">button success</button>
+        <button type="button" class="button info">button info</button>
+        <button type="button" class="button warning">button warning</button>
+        <button type="button" class="button alert">button alert</button>
+        <h3 class="subheader">Se puede añadir <code>large|small|tiny</code> para cambiar de tamaño los botones</h3>
+        <button type="button" class="button large">Large</button>
+        <button type="button" class="button">Default</button>
+        <button type="button" class="button small">Small</button>
+        <button type="button" class="button tiny">Tiny</button>
+        <h3 class="subheader">Las clases <code>radius|round</code> añaden borde con radio a los botones</h3>
+        <button type="button" class="button">Default Button</button>
+        <button type="button" class="button radius">Radius Button</button>
+        <button type="button" class="button round">Round Button</button>
+     </div>
+
+     <!----------------------------------->
+     <hr>
+     <!------------------------------------->
+   <div class="row">
+      <h1>MENU</h1>
+      <h3 class="subheader">Con el uso de la clase <code>menu</code> creamos un menú horizontal simple</h3>
+      <ul class="menu">
+         <li><a href="">Elemento 1</a></li>
+         <li><a href="">Elemento 2</a></li>
+         <li><a href="">Elemento 3</a></li>
+      </ul>
+   </div>
+
+
+
+
+   <!-- Compressed JavaScript -->
+   <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
     <script>
       $(document).foundation();
     </script>
